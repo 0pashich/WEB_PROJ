@@ -1,4 +1,5 @@
-import { DateTime } from 'https://moment.github.io/luxon/es6/luxon.min.js';
+// import { DateTime } from 'https://moment.github.io/luxon/es6/luxon.min.js';
+import { DateTime } from "luxon";
 
 function getDateDiff(dateFrom, dateTo) {
 
@@ -9,7 +10,7 @@ function getDateDiff(dateFrom, dateTo) {
   const dateFromObj = DateTime.fromISO(dateFrom);
   const dateToObj = DateTime.fromISO(dateTo);
 
-  return dateFromObj.diff(dateToObj, ['years','months', 'days',]).toObject()
+  return dateFromObj.diff(dateToObj, ['years', 'months', 'days',]).toObject()
 }
 
 export default getDateDiff;

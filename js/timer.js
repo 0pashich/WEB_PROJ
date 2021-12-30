@@ -1,5 +1,7 @@
-import { Duration, DateTime } from 'https://moment.github.io/luxon/es6/luxon.js';
+// import { Duration, DateTime } from 'https://moment.github.io/luxon/es6/luxon.js';
+import { Duration } from "luxon";
 import { printTime } from './printResult.js'
+import { Howl, Howler } from 'howler';
 
 var sound = new Howl({ src: ['./sound/beep.mp3'] });
 const timeField = document.getElementById('time');
